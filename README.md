@@ -8,10 +8,10 @@ This repository contains code and documentation for analyzing RNA sequencing (RN
 
 ## **Table of Contents**
 1. [Introduction](#introduction)
-2. [RNA-seq Methodology](#rna-seq-methodology)
-3. [Features](#features)
-4. [Data Sources](#data-sources)
-5. [Visualization](#visualization)
+2. [Data Sources](#data-sources)
+3. [Visualization](#visualization)
+4. [RNA-seq Methodology](#rna-seq-methodology)
+5. [Features](#features)
 6. [miRNA Analysis Results](#miRNA-Analysis-Results)
 7. [Gene Expression Analysis Results](#Gene-Expression-Analysis-Results)
 8. [Enrichment Analysis](#enrichment-analysis)
@@ -32,12 +32,33 @@ This study leverages preprocessed data from **The Cancer Genome Atlas (TCGA)** t
 
 ---
 
+## **Data Sources**
+
+This analysis uses data retrieved from **The Cancer Genome Atlas (TCGA)** for melanoma patients. You can access the relevant data via the following links:
+- **TCGA Melanoma Data**: [TCGA Melanoma Data](https://acgt.cs.tau.ac.il/multi_omic_benchmark/download.html)
+- **Project Data**: [Google Drive - Project Files](https://drive.google.com/drive/folders/1mVOsP3TBsUwEyCY9visGcA9QlG_eZB_e?usp=drive_link)
+- **GSEA Data**: [Google Drive - GSEA Files](https://drive.google.com/drive/folders/1IabRpZM-N7r4LOFnk0K70PEQtUHljagN?usp=drive_link)
+
+---
+
 ## **Features**
 - **Data Preprocessing**: Handles data cleaning, missing value removal, and formatting to ensure compatibility with metadata.
 - **Differential Expression Analysis**: Identifies significantly upregulated and downregulated genes and miRNAs using DESeq2.
 - **Visualization**: Generates key plots (histograms, box plots, QQ plots, volcano plots, heat maps, PCA) for exploring and interpreting the data.
 - **Enrichment Analysis**: Conducts pathway and functional analysis using GProfiler and Gene Set Enrichment Analysis (GSEA).
-- **Comprehensive Workflow**: Three scripts that integrate all steps for reproducibility and efficiency.
+
+---
+
+## **Visualization**
+
+Several key visualizations are generated to explore and interpret the data:
+1. **Histogram**: Displays the distribution of gene/miRNA expression.
+2. **Box Plot**: Visualizes scaled data for better comparison.
+3. **QQ Plot**: Assesses normality of data distribution.
+4. **Volcano Plot**: Highlights significant differentially expressed transcripts.
+5. **Heat Map**: Visualizes the most significant miRNAs/genes.
+6. **PCA Plot**: Reduces dimensionality and visualizes clustering.
+7. **GSEA**: Enrichment analysis based on gene sets, with tools like **GProfiler** and **GSEA** used for pathway identification.
 
 ---
 
@@ -67,28 +88,6 @@ DESeq2 was used to compare two conditions: **diseased** vs. **living** patients 
 - Defining a **contrast** between the two conditions.
 - Identifying differentially expressed transcripts (DETs) with an adjusted **p-value < 0.05** and **fold change > 1.2**.
 - This resulted in the identification of three significant miRNAs, which could potentially serve as biomarkers for melanoma.
-
----
-
-## **Data Sources**
-
-This analysis uses data retrieved from **The Cancer Genome Atlas (TCGA)** for melanoma patients. You can access the relevant data via the following links:
-- **TCGA Melanoma Data**: [TCGA Melanoma Data](https://acgt.cs.tau.ac.il/multi_omic_benchmark/download.html)
-- **Project Data**: [Google Drive - Project Files](https://drive.google.com/drive/folders/1mVOsP3TBsUwEyCY9visGcA9QlG_eZB_e?usp=drive_link)
-- **GSEA Data**: [Google Drive - GSEA Files](https://drive.google.com/drive/folders/1IabRpZM-N7r4LOFnk0K70PEQtUHljagN?usp=drive_link)
-
----
-
-## **Visualization**
-
-Several key visualizations are generated to explore and interpret the data:
-1. **Histogram**: Displays the distribution of gene/miRNA expression.
-2. **Box Plot**: Visualizes scaled data for better comparison.
-3. **QQ Plot**: Assesses normality of data distribution.
-4. **Volcano Plot**: Highlights significant differentially expressed transcripts.
-5. **Heat Map**: Visualizes the most significant miRNAs/genes.
-6. **PCA Plot**: Reduces dimensionality and visualizes clustering.
-7. **GSEA**: Enrichment analysis based on gene sets, with tools like **GProfiler** and **GSEA** used for pathway identification.
 
 ---
 
