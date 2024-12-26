@@ -17,7 +17,9 @@ This repository contains code and documentation for analyzing RNA sequencing (RN
 8. [Gene Expression Analysis Results](#Gene-Expression-Analysis-Results)
 9. [Enrichment Analysis](#enrichment-analysis)
 10. [Integromics Analysis](#integromics-analysis)
-11. [License](#license)
+11. [Contributors](#Contributors)
+12. [Acknowledgments](#Acknowledgments)
+13. [License](#license)
 
 ---
 
@@ -118,8 +120,6 @@ Several key visualizations are generated to explore and interpret the data:
 
 3. **PCA**: PCA was performed on the gene expression data, with the first principal component (PC1) explaining **24% of the variance**, and the second principal component (PC2) explaining **19%**. The PCA plots based on **vital status** and **gender** did not show any clear correlation between these factors and gene expression, as the data points were randomly distributed.
 
-4. **Gene Enrichment Analysis (GSEA)**: Further analysis was conducted on the differentially expressed genes using **Gene Set Enrichment Analysis (GSEA)** and **gProfiler** to explore biological pathways and gene functions. These analyses are crucial for understanding the underlying biological processes related to melanoma.
-
 ---
 
 ## **Enrichment Analysis**
@@ -149,15 +149,20 @@ MOFA is a matrix factorization technique that differs from PCA in its ability to
 Enrichment analysis of high-weight features (genes) from Factor 2 revealed significant associations with structural functions in the skin, such as **keratinocyte differentiation**, **keratinization**, and **epidermis development**. Reactome pathways indicated that these genes are involved in **cornified envelope formation** and **keratinization**. However, no significant pathways were identified in the KEGG database.
 
 ### MOFA Variance and Features
-Figures (17 A-D) illustrate the variation of factors across different omics. The heat map plots show the weights of the top factors, revealing how these factors upregulate or downregulate features in each omic dataset. Annotations using metadata (e.g., gender, tumor tissue site, and vital status) did not reveal clear correlations with these factors.
+The heat map plots show the weights of the top factors, revealing how these factors upregulate or downregulate features in each omic dataset. Annotations using metadata (e.g., gender, tumor tissue site, and vital status) did not reveal clear correlations with these factors.
 
 ---
 
-## **Reports and Code**
+## **Contributors**
 
 - Mohamed Elmanzalawi [Linkedin] 
 - Menna Ramadan  
 - Mohamed Aboalkasem
+
+---
+
+## **Acknowledgments**
+We express our sincere gratitude to Prof.Mohamed Mysara [Linkedin](https://www.linkedin.com/in/mohamed-mysara-06bb265b/) for his invaluable supervision and guidance throughout the project.
 
 ---
 
