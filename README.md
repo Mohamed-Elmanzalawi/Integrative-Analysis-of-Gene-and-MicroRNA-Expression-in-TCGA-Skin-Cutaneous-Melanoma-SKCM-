@@ -12,14 +12,13 @@ This repository contains code and documentation for analyzing RNA sequencing (RN
 3. [Features](#features)
 4. [Data Sources](#data-sources)
 5. [Visualization](#visualization)
-6. [Results](#results)
-7. [miRNA Analysis Results](#miRNA-Analysis-Results)
-8. [Gene Expression Analysis Results](#Gene-Expression-Analysis-Results)
-9. [Enrichment Analysis](#enrichment-analysis)
-10. [Integromics Analysis](#integromics-analysis)
-11. [Contributors](#Contributors)
-12. [Acknowledgments](#Acknowledgments)
-13. [License](#license)
+6. [miRNA Analysis Results](#miRNA-Analysis-Results)
+7. [Gene Expression Analysis Results](#Gene-Expression-Analysis-Results)
+8. [Enrichment Analysis](#enrichment-analysis)
+9. [Integromics Analysis](#integromics-analysis)
+10. [Contributors](#Contributors)
+11. [Acknowledgments](#Acknowledgments)
+12. [License](#license)
 
 ---
 
@@ -92,9 +91,8 @@ Several key visualizations are generated to explore and interpret the data:
 7. **GSEA**: Enrichment analysis based on gene sets, with tools like **GProfiler** and **GSEA** used for pathway identification.
 
 ---
-# **Results**
 
-### **miRNA Analysis Results**
+## **miRNA Analysis Results**
 
 1. The distribution of miRNA expression data was visualized using a histogram, which indicated that the data is **right-skewed** and **not normally distributed**.
    
