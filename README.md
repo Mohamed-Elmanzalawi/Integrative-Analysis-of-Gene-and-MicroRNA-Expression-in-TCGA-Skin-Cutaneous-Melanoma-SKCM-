@@ -117,6 +117,8 @@ DESeq2 was used to compare two conditions: **diseased** vs. **living** patients 
 2. **Volcano Plot & Heat Map**: Differential expression analysis using **DESeq2** identified **64 significantly expressed genes** in deceased melanoma patients. Of these, **41 genes were upregulated**, and **23 genes were downregulated**. This was visualized using:
    - **Volcano plot**, where **red dots** indicate **upregulated genes** and **blue dots** indicate **downregulated genes**.
    - **Heat map** showing the most significantly differentially expressed genes.
+  
+![](Plots/Volcano_plot.png)
 
 3. **PCA**: PCA was performed on the gene expression data, with the first principal component (PC1) explaining **24% of the variance**, and the second principal component (PC2) explaining **19%**. The PCA plots based on **vital status** and **gender** did not show any clear correlation between these factors and gene expression, as the data points were randomly distributed.
 
