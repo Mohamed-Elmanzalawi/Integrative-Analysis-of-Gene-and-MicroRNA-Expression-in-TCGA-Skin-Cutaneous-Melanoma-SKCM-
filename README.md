@@ -38,6 +38,7 @@ This analysis uses data retrieved from **The Cancer Genome Atlas (TCGA)** for me
 - **TCGA Melanoma Data**: [TCGA Melanoma Data](https://acgt.cs.tau.ac.il/multi_omic_benchmark/download.html)
 - **Project Data**: [Google Drive - Project Files](https://drive.google.com/drive/folders/1mVOsP3TBsUwEyCY9visGcA9QlG_eZB_e?usp=drive_link)
 - **GSEA Data**: [Google Drive - GSEA Files](https://drive.google.com/drive/folders/1IabRpZM-N7r4LOFnk0K70PEQtUHljagN?usp=drive_link)
+- **Supplementary Data**:[Google Drive - Supplementary Data](https://drive.google.com/drive/folders/1Q-6UKZzoDq6cfKrt9sdpUjUiOxvUbMKQ?usp=drive_link)
 
 ---
 
@@ -100,6 +101,8 @@ DESeq2 was used to compare two conditions: **diseased** vs. **living** patients 
 3. Normality was tested using a QQ plot, which revealed that the data is **not normally distributed** as the data points do not align with the normal distribution line.
 
 4. The volcano plot visualizes differentially expressed miRNAs. The **blue color** indicates **upregulated miRNAs**, and the **red color** indicates **downregulated miRNAs**. A total of **three significant miRNAs** were identified, based on a **p-adjusted value < 0.05** and **log2FC > 1.2** (for upregulated miRNAs) and **log2FC < -1.2** (for downregulated miRNAs). Specifically, **two miRNAs were downregulated**, and **one was upregulated**.
+
+![](Plots/Volcanoplot.png)
 
 5. A heat map was generated to visualize the three significant differentially expressed miRNAs (p-adjusted < 0.05 and log2FC > 1.2). These miRNAs could potentially be used as biomarkers for melanoma detection and progression. However, since the dataset consists only of **case samples** (both deceased and living), the results cannot be conclusively interpreted as biomarkers for melanoma detection.
 
