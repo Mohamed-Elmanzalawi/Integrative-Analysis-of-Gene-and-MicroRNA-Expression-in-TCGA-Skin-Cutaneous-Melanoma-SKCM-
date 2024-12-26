@@ -153,7 +153,7 @@ The heat map plots show the weights of the top factors, revealing how these fact
 
 ## **Contributors**
 
-- Mohamed Elmanzalawi [Linkedin] 
+- Mohamed Elmanzalawi [Linkedin](www.linkedin.com/in/mohamed-elmanzalawi) 
 - Menna Ramadan  
 - Mohamed Aboalkasem
 
